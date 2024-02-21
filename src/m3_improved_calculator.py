@@ -39,7 +39,7 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
+# I did not have enough time to complete these, i apologize.
 ###############################################################################
 # TODO: 2. (4 pts)
 #
