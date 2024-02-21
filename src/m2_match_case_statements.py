@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (3 pts)
+# DONE: 1. (3 pts)
 #
 #   Write a function called color_picker() that prints out a message to a user.
 #
@@ -16,9 +16,26 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def color_picker():
+    color = input("Enter the name of a color: ")
+
+    if color.lower() == 'red':
+        print("Success! You picked red.")
+    elif color.lower() == 'blue':
+        print("Success! You picked blue.")
+    elif color.lower() == 'green':
+        print("Success! You picked green.")
+    elif color.lower() == 'yellow':
+        print("Success! You picked yellow.")
+    elif color.lower() == 'purple':
+        print("Success! You picked purple.")
+    else:
+        print("Unknown Color!")
+
+color_picker()
 
 ###############################################################################
-# TODO: 2. (3 pts)
+# DONE 2. (3 pts)
 #
 #   Write a function called grade() that tells a student what letter grade they
 #   got on an assignment based on the percentage they indicate.
@@ -36,3 +53,20 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def grade():
+    percentage = float(input("Enter your percentage as a decimal: "))
+
+    if 0.9 <= percentage <= 1:
+        print("You received a(n) A.")
+    elif 0.8 <= percentage < 0.9:
+        print("You received  B.")
+    elif 0.7 <= percentage < 0.8:
+        print("You received a C.")
+    elif 0.6 <= percentage < 0.7:
+        print("You received a D.")
+    elif 0 <= percentage < 0.6:
+        print("You received a(n) F.")
+    else:
+        print("Invalid Score")
+
+grade()
